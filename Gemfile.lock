@@ -29,6 +29,7 @@ GEM
       timers (>= 4.1.1)
     celluloid-supervision (0.20.6)
       timers (>= 4.1.1)
+    colorize (0.8.1)
     dotenv (2.2.1)
     eventmachine (1.2.5)
     faraday (0.9.2)
@@ -57,6 +58,7 @@ DEPENDENCIES
   bitfinex-rb
   celluloid
   celluloid-io
+  colorize
   dotenv
 
 BUNDLED WITH
