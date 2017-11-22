@@ -4,10 +4,11 @@ class BookActor
   attr_reader :book
   attr_reader :sorted_prices
   attr_reader :pair
+  attr_reader :exchange
   attr_reader :last_bid_update
   attr_reader :last_ask_update
 
-  def initialize(pair)
+  def initialize(pair, exchange)
     @book = {
       bids:  {},
       asks:  {},
@@ -22,6 +23,7 @@ class BookActor
     @last_ask_update = 0
 
     @pair = pair
+    @exchange = exchange
   end
 
   def time_since_ask
