@@ -14,7 +14,9 @@ class BookDisplayActor
   def print!
     @timer = every(1) {
       @book_actors.each do |b|
-        puts b.book
+        system 'clear'
+        puts "Current Ask: #{b.current_ask} from #{b.time_since_ask} seconds ago".red
+        puts "Current Bid: #{b.current_bid} from #{b.time_since_bid} seconds ago".green
       end
     }
   end
